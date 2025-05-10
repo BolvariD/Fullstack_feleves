@@ -18,6 +18,7 @@ namespace BACKEND.Data
                 loan.Years = i;
                 loan.RepayAmount = Calculate(amount, interestRate, i);
                 double yearlyInterest = (loan.RepayAmount + amount) / i;
+                loan.InterestRate = yearlyInterest;
                 repayments.Add(loan);
             }
         }
