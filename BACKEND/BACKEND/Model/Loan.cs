@@ -2,7 +2,8 @@
 {
     public class Loan
     {
-        public int Amount { get; set; }
+        public int Years { get; set; }
         public float InterestRate { get; set; }
+        public int RepayAmount { get; set; }
     }
 }
