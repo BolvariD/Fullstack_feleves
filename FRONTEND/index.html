@@ -10,14 +10,22 @@
     <title>Hitel konstrukció</title>
 </head>
 <body>
-    <div class="card">
+    <div class="card" id="content">
         <h1>Hitel konstrukciók</h1>
         <form action="" method="get">
-            <label for="loanAmountInput">Hitel (ft)</label>
-            <input type="number" name="loanAmount" id="loanAmountInput">
-            <label for="interestRateInput">Kamatláb (%)</label>
-            <input type="number" name="interestRate" id="interestRateInput">
-            <input type="button" value="Számítás">
+            <div id="inputs" class="row">
+                <div id="loanInput" class="col">
+                    <label for="loanAmountInput" class="form-label">Hitel:</label>
+                    <input type="number" name="loanAmount" id="loanAmountInput" class="form-control">
+                    <label for="loanAmountInput">Ft</label>
+                </div>
+                <div id="rateInput" class="col">
+                    <label for="interestRateInput" class="form-label">Kamatláb:</label>
+                    <input type="number" name="interestRate" id="interestRateInput" class="form-control">
+                    <label for="interestRateInput">%</label>
+                </div>
+            </div>
+            <input id="inputButton" class="btn btn-outline-info" type="button" value="Számítás">
         </form>
         <div id="calculationResults"></div>
     </div>
