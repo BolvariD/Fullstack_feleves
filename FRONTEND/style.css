@@ -23,13 +23,11 @@ body {
 
 #loanInput {
     display: flex;
-    height: 50%;
     justify-content: center;
 }
 
 #rateInput {
     display: flex;
-    height: 50%;
     justify-content: center;
 }
 
@@ -43,9 +41,32 @@ body {
     margin: 5px;
 }
 
+#calculationResults {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cardResults {
+    max-width: 200px;
+    margin: 6px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 15px;
+}
+
+label {
+    font-size: 18pt;
+    padding-top: 4px;
 }
 

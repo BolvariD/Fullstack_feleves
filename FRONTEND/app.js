@@ -13,26 +13,27 @@ async function ShowCalculations() {
         let repayAmount = document.createElement("div")
         let monthlyRepayment = document.createElement("div")
 
-        years.innerHTML = x.years + " év"
-        repayAmount.innerHTML = "Visszafizetendő összeg: " + x.repayAmount + " Ft"
-        monthlyRepayment.innerHTML = "Havi törlesztő díj: " + x.interestRate + " Ft"
+        years.innerHTML = "<h5>" + x.years + " év" + "</h5>"
+        repayAmount.innerHTML = "Visszafizetendő összeg: " + "<br>" + x.repayAmount.toLocaleString() + " Ft"
+        monthlyRepayment.innerHTML = "Havi törlesztő díj: " + "<br>" + x.interestRate.toLocaleString() + " Ft"
 
         let card = document.createElement("div")
         card.appendChild(years)
         card.appendChild(repayAmount)
         card.appendChild(monthlyRepayment)
 
-        if (x.interestRate <= 20000) {
+        if (x.interestRate <= 45000) {
             card.classList.add("bg-success-subtle")
         }
-        else if (x.interestRate <= 50000 && x.interestRate > 20000) {
+        else if (x.interestRate <= 100000 && x.interestRate > 45000) {
             card.classList.add("bg-warning-subtle")
         }
-        else if (x.interestRate > 50000) {
+        else if (x.interestRate > 100000) {
             card.classList.add("bg-danger-subtle")
         }
 
         card.classList.add("card")
+        card.classList.add("cardResults")
 
         results.appendChild(card)
     })
