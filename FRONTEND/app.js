@@ -13,9 +13,9 @@ async function ShowCalculations() {
         let repayAmount = document.createElement("div")
         let monthlyRepayment = document.createElement("div")
 
-        years.innerHTML = "<h5>" + x.years + " év" + "</h5>"
-        repayAmount.innerHTML = "Visszafizetendő összeg: " + "<br>" + x.repayAmount.toLocaleString() + " Ft"
-        monthlyRepayment.innerHTML = "Havi törlesztő díj: " + "<br>" + x.interestRate.toLocaleString() + " Ft"
+        years.innerHTML = "<h4>" + x.years + " év" + "</h4>"
+        repayAmount.innerHTML = "<b>Visszafizetendő összeg:</b> " + "<br>" + x.repayAmount.toLocaleString() + " Ft"
+        monthlyRepayment.innerHTML = "<b>Havi törlesztő díj:</b> " + "<br>" + x.interestRate.toLocaleString() + " Ft"
 
         let card = document.createElement("div")
         card.appendChild(years)
