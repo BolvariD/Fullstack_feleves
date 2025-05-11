@@ -4,6 +4,6 @@
     {
         public int Years { get; set; }
         public double InterestRate { get; set; }
-        public int RepayAmount { get; set; }
+        public long RepayAmount { get; set; }
     }
 }

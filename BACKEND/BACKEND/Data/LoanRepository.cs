@@ -23,9 +23,9 @@ namespace BACKEND.Data
             }
         }
 
-        int Calculate(int amount, double interestRate, int period)
+        long Calculate(int amount, double interestRate, int period)
         {
-            return Convert.ToInt32(amount * Math.Pow((1 + interestRate / 100), period));
+            return Convert.ToInt64(amount * Math.Pow((1 + interestRate / 100), period));
         }
 
         public IEnumerable<Loan> GetCalculations(int amount, double interestRate)
